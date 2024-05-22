@@ -1,12 +1,24 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-export default function Navigation() {
+  type NavigationProps = {
+    customClass: string;
+  }
+
+export default function Navigation({customClass}: NavigationProps) {
   return (
-    <nav className='uppercase text-2xl font-light flex gap-10 items-center'>
-      <Link href={''}>Nos services</Link>
-      <Link href={''}>Équipe</Link>
-      <Link href={''}>Contact</Link>
+    <nav className="flex">
+      <ul className={customClass}>
+        <li>
+          <Link href={""}>Nos services</Link>
+        </li>
+        <li>
+          <Link href={""}>Équipe</Link>
+        </li>
+        <li>
+          <Link href={""}>Contact</Link>
+        </li>
+      </ul>
     </nav>
-  )
+  );
 }
