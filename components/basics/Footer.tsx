@@ -2,13 +2,11 @@ import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import Navigation from "./Navigation";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Image from "next/image";
-import { Input } from "./ui/input";
+import { Input } from "../ui/input";
 
 export default function Footer() {
-  
-
   return (
     <footer className="border-t border-black bg-black dark:bg-white text-white dark:text-black">
       <div className="flex container justify-between py-12">
@@ -44,16 +42,29 @@ export default function Footer() {
           </nav>
         </div>
         <div className="">
-          <h5 className="uppercase text-lg border-b border-white pb-1 mb-5 dark:border-black">Navigation</h5>
+          <h5 className="uppercase text-lg border-b border-white pb-1 mb-5 dark:border-black">
+            Navigation
+          </h5>
           <Navigation customClass="uppercase" />
           <Link href="" className="uppercase">
             Mentions légales
           </Link>
         </div>
         <div className="flex flex-col w-2/5">
-          <h5 className="uppercase text-lg border-b border-white pb-1 mb-5 dark:border-black">Newsletter</h5>
-          <Input type="email" placeholder="Email" className="mb-2 text-black dark:text-white placeholder:italic" />
-          <Button type="submit" variant="secondary" size="lg" className="w-fit active:scale-95 uppercase">
+          <h5 className="uppercase text-lg border-b border-white pb-1 mb-5 dark:border-black">
+            Newsletter
+          </h5>
+          <Input
+            type="email"
+            placeholder="Email"
+            className="mb-2 text-black dark:text-white placeholder:italic"
+          />
+          <Button
+            type="submit"
+            variant="secondary"
+            size="lg"
+            className="w-fit active:scale-95 uppercase"
+          >
             S’abonner
           </Button>
         </div>
