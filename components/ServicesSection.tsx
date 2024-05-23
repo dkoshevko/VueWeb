@@ -4,10 +4,8 @@ import ServiceCard from "./ServiceCard";
 export default function ServicesSection() {
   return (
     <section id="services" className="flex flex-col items-center py-16">
-      <h2 className="uppercase text-3xl mb-10">
-        Nos services
-      </h2>
-      <div className="flex justify-center gap-20">
+      <h2 className="uppercase text-3xl font-semibold mb-10">Nos services</h2>
+      <div className="container grid grid-cols-3 gap-24">
         <ServiceCard
           image="/icons/create-site.svg"
           title="Création de site"

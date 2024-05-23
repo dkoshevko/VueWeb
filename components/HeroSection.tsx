@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section id="hero" className="h-screen gradient-bg flex items-center justify-evenly">
       <div className="flex flex-col w-1/3 gap-3">
-        <h1 className="text-3xl">
+        <h1 className="text-3xl font-semibold">
           Transformez Votre Présence en Ligne avec Notre Expertise
         </h1>
         <p>
