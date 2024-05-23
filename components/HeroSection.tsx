@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="h-screen gradient-bg flex items-center justify-evenly">
+    <section id="hero" className="h-screen gradient-bg flex items-center justify-evenly">
       <div className="flex flex-col w-1/3 gap-3">
         <h1 className="text-3xl">
           Transformez Votre Présence en Ligne avec Notre Expertise

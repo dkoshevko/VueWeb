@@ -10,13 +10,13 @@ export default function Navigation({customClass}: NavigationProps) {
     <nav className="flex">
       <ul className={customClass}>
         <li>
-          <Link href={""}>Nos services</Link>
+          <Link href="#services">Nos services</Link>
         </li>
         <li>
-          <Link href={""}>Équipe</Link>
+          <Link href="#team">Équipe</Link>
         </li>
         <li>
-          <Link href={""}>Contact</Link>
+          <Link href="#contact">Contact</Link>
         </li>
       </ul>
     </nav>
