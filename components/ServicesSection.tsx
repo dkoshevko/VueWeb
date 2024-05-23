@@ -9,7 +9,7 @@ export default function ServicesSection() {
       </h2>
       <div className="flex justify-center gap-20">
         <ServiceCard
-          image="icons/create-site.svg"
+          image="/icons/create-site.svg"
           title="Création de site"
           description="Notre service de création de site allie design innovant et développement performant pour vous offrir une
           présence en ligne sur mesure. De la conception graphique à l'implémentation technique, nous assurons
@@ -18,7 +18,7 @@ export default function ServicesSection() {
           potentiels."
         />
         <ServiceCard
-          image="icons/recreate-site.svg"
+          image="/icons/recreate-site.svg"
           title="Refonte de site"
           description="Donnez une nouvelle vie à votre site web existant avec notre service de refonte. Nous analysons votre
           site actuel pour identifier les améliorations nécessaires en matière de design, de performance et de
@@ -26,7 +26,7 @@ export default function ServicesSection() {
           utilisateur exceptionnelle, tout en conservant les éléments essentiels de votre marque."
         />
         <ServiceCard
-          image="icons/seo.svg"
+          image="/icons/seo.svg"
           title="SEO & Optimisation"
           description="Boostez la visibilité de votre site web avec notre service d'optimisation SEO. Grâce à des stratégies de
           référencement avancées, nous améliorons votre positionnement sur les moteurs de recherche, attirant
