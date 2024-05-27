@@ -1,3 +1,4 @@
+import ContactSection from "@/components/ContactSection";
 import EngagementsSection from "@/components/EngagementsSection";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <ServicesSection />
       <TeamSection />
       <EngagementsSection />
+      <ContactSection />
     </main>
   );
 }
