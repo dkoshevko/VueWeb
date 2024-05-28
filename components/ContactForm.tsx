@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { useState } from 'react'
 import { useToast } from "@/components/ui/use-toast"
 
 
@@ -79,72 +78,79 @@ export function ContactForm({customClass}: ContactFormProps) {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className={customClass}>
+        <div className="space-y-5">
+          <FormField
+            control={form.control}
+            name="firstName"
+            render={({ field }) => (
+              <FormItem>
+                {/* <FormLabel>Votre prénom</FormLabel> */}
+                <FormControl>
+                  <Input placeholder="PRÉNOM :" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="lastName"
+            render={({ field }) => (
+              <FormItem>
+                {/* <FormLabel>Votre nom</FormLabel> */}
+                <FormControl>
+                  <Input placeholder="NOM :" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="msg"
+            render={({ field }) => (
+              <FormItem>
+                {/* <FormLabel>Votre message</FormLabel> */}
+                <FormControl>
+                  <Textarea placeholder="MESSAGE :" {...field} className="h-32" />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
+        <div className="space-y-5">
         <FormField
-          control={form.control}
-          name="firstName"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Votre prénom</FormLabel>
-              <FormControl>
-                <Input placeholder="Jean" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="lastName"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Votre nom</FormLabel>
-              <FormControl>
-                <Input placeholder="Dupont" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Votre email</FormLabel>
-              <FormControl>
-                <Input placeholder="..@" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="phone"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Votre numéro</FormLabel>
-              <FormControl>
-                <Input placeholder="0x.xx..." {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="msg"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Votre message</FormLabel>
-              <FormControl>
-                <Textarea placeholder="Parlez nous de votre projet" {...field}  />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit" className="w-fit px-10">Envoyer</Button>
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                {/* <FormLabel>Votre email</FormLabel> */}
+                <FormControl>
+                  <Input placeholder="MAIL :" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                {/* <FormLabel>Votre numéro</FormLabel> */}
+                <FormControl>
+                  <Input placeholder="TÉLÉPHONE :" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button type="submit" className="w-fit px-10 uppercase">Envoyer</Button>
+          <p className="text-center text-2xl italic font-light pt-5">
+          “Parlez-nous de votre projet”
+          </p>
+        </div>
       </form>
     </Form>
   )
