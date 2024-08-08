@@ -13,7 +13,7 @@ export default function EngagementsSection() {
           détails pour garantir votre satisfaction totale."
         />
         <EngagementCard
-          title="🔍 Transparence et Communication"
+          title="🔍 Clarté et Communication"
           description="Nous prônons une communication claire et transparente tout au long
           de notre collaboration. Vous serez informé à chaque étape du processus, assurant ainsi une coopération
           harmonieuse et sans surprises."
