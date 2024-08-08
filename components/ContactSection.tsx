@@ -4,9 +4,9 @@ import { ContactForm } from "./ContactForm";
 export default function ContactSection() {
   return (
     <section id="contact" className="gradient-bg flex flex-col items-center py-16">
-      <h2 className="uppercase text-3xl font-semibold mb-10">Contactez-nous</h2>
-      <div className="container">
-        <ContactForm customClass="grid grid-cols-2 gap-x-10 gap-y-4" />
+      <h2 className="uppercase text-3xl tracking-wide font-semibold mb-10">Parlez-nous de votre projet</h2>
+      <div className="container flex justify-center">
+        <ContactForm customClass="grid w-1/2 space-y-3" />
       </div>
     </section>
   );

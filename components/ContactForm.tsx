@@ -78,7 +78,6 @@ export function ContactForm({customClass}: ContactFormProps) {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className={customClass}>
-        <div className="space-y-5">
           <FormField
             control={form.control}
             name="firstName"
@@ -107,21 +106,6 @@ export function ContactForm({customClass}: ContactFormProps) {
           />
           <FormField
             control={form.control}
-            name="msg"
-            render={({ field }) => (
-              <FormItem>
-                {/* <FormLabel>Votre message</FormLabel> */}
-                <FormControl>
-                  <Textarea placeholder="MESSAGE :" {...field} className="h-32" />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
-        <div className="space-y-5">
-        <FormField
-            control={form.control}
             name="email"
             render={({ field }) => (
               <FormItem>
@@ -146,11 +130,20 @@ export function ContactForm({customClass}: ContactFormProps) {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-fit px-10 uppercase">Envoyer</Button>
-          <p className="text-center text-2xl italic font-light pt-5">
-          “Parlez-nous de votre projet”
-          </p>
-        </div>
+          <FormField
+            control={form.control}
+            name="msg"
+            render={({ field }) => (
+              <FormItem>
+                {/* <FormLabel>Votre message</FormLabel> */}
+                <FormControl>
+                  <Textarea placeholder="MESSAGE :" {...field} className="h-32" />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button type="submit" className="w-fit px-10 uppercase place-self-end">Envoyer</Button>
       </form>
     </Form>
   )
