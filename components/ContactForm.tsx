@@ -143,7 +143,7 @@ export function ContactForm({customClass}: ContactFormProps) {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-fit px-10 uppercase place-self-end">Envoyer</Button>
+          <Button type="submit" variant="outline" className="w-fit px-10 uppercase place-self-end">Envoyer</Button>
       </form>
     </Form>
   )
