@@ -20,10 +20,10 @@ export default function Footer() {
                 <Link href="tel:+33123456789">01.23.45.67.89</Link>
               </li>
               <li className="flex gap-3">
-                <Link href="">
+                <Link href="https://www.linkedin.com/company/vueweb">
                   <Image
                     src="/icons/linkedin.svg"
-                    alt=""
+                    alt="LinkedIn"
                     width={35}
                     height={35}
                   />
@@ -31,7 +31,7 @@ export default function Footer() {
                 <Link href="">
                   <Image
                     src="/icons/instagram.svg"
-                    alt=""
+                    alt="Instagram"
                     width={35}
                     height={35}
                   />
