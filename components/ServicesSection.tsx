@@ -5,7 +5,7 @@ export default function ServicesSection() {
   return (
     <section id="services" className="flex flex-col items-center py-16">
       <h2 className="uppercase text-3xl font-semibold mb-10">Nos services</h2>
-      <div className="container grid grid-cols-3 gap-24">
+      <div className="container grid lg:grid-cols-3 gap-10 lg:gap-24">
         <ServiceCard
           image="/icons/create-site.svg"
           title="Création de site"
