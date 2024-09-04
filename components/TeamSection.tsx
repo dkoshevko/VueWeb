@@ -5,7 +5,7 @@ export default function TeamSection() {
   return (
     <section id="team" className="gradient-bg flex flex-col items-center py-16">
       <h2 className="uppercase text-3xl font-semibold mb-10">Notre équipe</h2>
-      <div className="flex justify-center gap-32">
+      <div className="flex flex-col lg:flex-row justify-center gap-10 lg:gap-32">
         <TeamMemberCard
           photo="/photos/DK.jpg"
           fullName="Denys"
