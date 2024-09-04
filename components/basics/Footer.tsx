@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="flex container justify-between lg:justify-evenly py-12">
         <div className="flex flex-col justify-between">
-          <Logo imageStyle="dark:invert" />
+          <Logo />
           <nav className="text-sm">
             <ul className="space-y-1">
               <li>
