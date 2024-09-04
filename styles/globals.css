@@ -19,3 +19,7 @@
     #737373
   );
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -9,7 +9,7 @@ import { Input } from "../ui/input";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex container justify-between py-12">
+      <div className="flex container justify-evenly py-12">
         <div className="flex flex-col justify-between">
           <Logo imageStyle="dark:invert" />
           <nav className="text-sm">
@@ -50,7 +50,7 @@ export default function Footer() {
             Mentions légales
           </Link>
         </div>
-        <div className="flex flex-col w-2/5">
+        {/* <div className="flex flex-col w-2/5">
           <h5 className="uppercase text-lg border-b-2 border-black pb-1 mb-5 dark:border-white">
             Newsletter
           </h5>
@@ -66,7 +66,7 @@ export default function Footer() {
           >
             S’abonner
           </Button>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
