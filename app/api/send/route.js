@@ -22,7 +22,7 @@ export async function POST(request) {
     // Email to the team
     const adminEmailData = await resend.emails.send({
       from: 'Équipe VueWeb <contact@vueweb.fr>',
-      to: 'denys.koshevko@vueweb.fr',
+      to: ['contact@vueweb.fr', 'denys.koshevko@vueweb.fr', 'rostyslav.pylypyak@vueweb.fr'],
       subject: 'Nouvelle demande de contact',
       react: AdminEmailTemplate({ firstName, lastName, email, phone, msg, subject }),
     });
