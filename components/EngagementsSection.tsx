@@ -5,7 +5,7 @@ export default function EngagementsSection() {
   return (
     <section id="engagements" className="flex flex-col items-center py-16">
       <h2 className="uppercase text-3xl font-semibold mb-10">Nos engagements</h2>
-      <div className="container grid grid-cols-3 gap-6">
+      <div className="container grid lg:grid-cols-3 gap-6">
         <EngagementCard
           title="🏆 Qualité et Excellence"
           description="Nous nous engageons à fournir des services de la plus haute qualité, en
