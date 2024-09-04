@@ -8,10 +8,10 @@ import { Input } from "../ui/input";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-black bg-black dark:bg-white text-white dark:text-black">
+    <footer>
       <div className="flex container justify-between py-12">
         <div className="flex flex-col justify-between">
-          <Logo imageStyle="invert dark:invert-0" />
+          <Logo imageStyle="dark:invert" />
           <nav className="text-sm">
             <ul className="space-y-1">
               <li>
@@ -42,7 +42,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="">
-          <h5 className="uppercase text-lg border-b border-white pb-1 mb-5 dark:border-black">
+          <h5 className="uppercase text-lg border-b-2 border-black pb-1 mb-5 dark:border-white">
             Navigation
           </h5>
           <Navigation customClass="uppercase" />
@@ -51,19 +51,18 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col w-2/5">
-          <h5 className="uppercase text-lg border-b border-white pb-1 mb-5 dark:border-black">
+          <h5 className="uppercase text-lg border-b-2 border-black pb-1 mb-5 dark:border-white">
             Newsletter
           </h5>
           <Input
             type="email"
-            placeholder="Email"
-            className="mb-2 text-black dark:text-white placeholder:italic"
+            placeholder="MAIL :"
+            className="mb-2 text-black dark:text-white"
           />
           <Button
             type="submit"
-            variant="secondary"
-            size="lg"
-            className="w-fit active:scale-95 uppercase"
+            variant="outline"
+            className="w-fit uppercase px-10 place-self-end"
           >
             S’abonner
           </Button>
