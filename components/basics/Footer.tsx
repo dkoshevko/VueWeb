@@ -17,7 +17,7 @@ export default function Footer() {
                 <Link href="mailto:contact@vueweb.fr">contact@vueweb.fr</Link>
               </li>
               <li>
-                <Link href="tel:+33123456789">01.23.45.67.89</Link>
+                <Link href="tel:+33778807466">07.78.80.74.66</Link>
               </li>
               <li className="flex gap-3">
                 <Link href="https://www.linkedin.com/company/vueweb">
