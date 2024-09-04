@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="h-screen gradient-bg flex items-center justify-evenly">
-      <div className="flex flex-col w-1/3 gap-3">
+    <section id="hero" className="h-screen gradient-bg flex flex-col lg:flex-row items-center justify-evenly">
+      <div className="flex flex-col mx-3 lg:mx-0 lg:w-1/3 gap-3">
         <h1 className="text-3xl font-semibold">
           Transformez Votre Présence en Ligne avec Notre Expertise
         </h1>
@@ -23,7 +23,7 @@ export default function HeroSection() {
           </Button>
         </Link>
       </div>
-      <div className="w-1/3 relative">
+      <div className="w-full lg:w-1/3 relative">
         <LottieAnimation animation={HeroAnimation} />
         <HeroBubble
           text="Meilleure satisfaction client"
@@ -34,13 +34,13 @@ export default function HeroSection() {
         <HeroBubble
           text="Conversion de nouveaux clients"
           direction="-rotate-12"
-          position="left-44 -bottom-24"
+          position="left-14 lg:left-44 lg:-bottom-24"
           delay="delay-1000"
         />
         <HeroBubble
           text="Plus de visibilité"
           direction="rotate-[31deg]"
-          position="-right-5 -top-2"
+          position="right-0 top-0 lg:-right-5 lg:-top-2"
           delay="delay-700"
         />
       </div>
