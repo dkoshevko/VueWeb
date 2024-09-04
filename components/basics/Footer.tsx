@@ -8,8 +8,7 @@ import { Input } from "../ui/input";
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="flex container justify-evenly py-12">
+    <footer className="flex container justify-between lg:justify-evenly py-12">
         <div className="flex flex-col justify-between">
           <Logo imageStyle="dark:invert" />
           <nav className="text-sm">
@@ -67,7 +66,6 @@ export default function Footer() {
             S’abonner
           </Button>
         </div> */}
-      </div>
     </footer>
   );
 }
