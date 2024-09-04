@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="h-screen gradient-bg flex flex-col lg:flex-row items-center justify-evenly">
+    <section id="hero" className="h-screen bg-gradient-primary dark:bg-gradient-dark flex flex-col lg:flex-row items-center justify-evenly">
       <div className="flex flex-col mx-3 lg:mx-0 lg:w-1/3 gap-3">
         <h1 className="text-3xl font-semibold">
           Transformez Votre Présence en Ligne avec Notre Expertise

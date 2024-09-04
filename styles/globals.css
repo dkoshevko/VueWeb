@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .gradient-bg {
   background-image: linear-gradient(
     to right bottom,
@@ -19,7 +23,20 @@
     #737373
   );
 }
-
-html {
-  scroll-behavior: smooth;
+.gradient-bg-d {
+  background-image: linear-gradient(
+    to right bottom,
+    #444d94,
+    #495197,
+    #4d549a,
+    #52579d,
+    #575aa0,
+    #58588f,
+    #57567d,
+    #56546c,
+    #555066,
+    #534d61,
+    #50495b,
+    #4d4656
+  );
 }

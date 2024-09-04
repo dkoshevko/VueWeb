@@ -3,7 +3,7 @@ import TeamMemberCard from "./TeamMemberCard";
 
 export default function TeamSection() {
   return (
-    <section id="team" className="gradient-bg flex flex-col items-center py-16">
+    <section id="team" className="bg-gradient-primary dark:bg-gradient-dark flex flex-col items-center py-16">
       <h2 className="uppercase text-3xl font-semibold mb-10">Notre équipe</h2>
       <div className="flex flex-col lg:flex-row justify-center gap-10 lg:gap-32">
         <TeamMemberCard

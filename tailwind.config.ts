@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(to right bottom, #6677d9, #6a81dc, #6e8adf, #7493e2, #7b9ce4, #809bdb, #859ad1,#8999c8, #888eb2, #83859c, #7c7c87, #737373);',
+        'gradient-dark': 'linear-gradient(to right bottom, #444d94, #495197, #4d549a, #52579d, #575aa0, #58588f, #57567d, #56546c, #555066, #534d61, #50495b, #4d4656);'
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
