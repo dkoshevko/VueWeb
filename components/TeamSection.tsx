@@ -7,17 +7,17 @@ export default function TeamSection() {
       <h2 className="uppercase text-3xl font-semibold mb-10">Notre équipe</h2>
       <div className="flex flex-col lg:flex-row justify-center gap-10 lg:gap-32">
         <TeamMemberCard
-          photo="/photos/DK.jpg"
+          photo="/photos/DK.png"
           fullName="Denys"
           jobPosition="CEO - Développeur"
         />
         <TeamMemberCard
-          photo="/photos/RP.jpg"
+          photo="/photos/RP.png"
           fullName="Rostyslav"
           jobPosition="COO - Développeur"
         />
         <TeamMemberCard
-          photo="/photos/AA.jpg"
+          photo="/photos/AA.png"
           fullName="Artur"
           jobPosition="CCO - Commercial"
         />
