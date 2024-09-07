@@ -44,10 +44,15 @@ export default function Footer() {
           <h5 className="uppercase text-lg border-b-2 border-black pb-1 mb-5 dark:border-white">
             Navigation
           </h5>
-          <Navigation customClass="uppercase" />
-          <Link href="/mentions-legales" className="uppercase">
-            Mentions légales
-          </Link>
+          <div className="flex flex-col">
+            <Navigation customClass="uppercase" />
+            <Link href="/mentions-legales" className="uppercase">
+              Mentions légales
+            </Link>
+            <Link href="/politique-de-confidentialite" className="uppercase">
+              Politique de confidentialité
+            </Link>
+          </div>
         </div>
         {/* <div className="flex flex-col w-2/5">
           <h5 className="uppercase text-lg border-b-2 border-black pb-1 mb-5 dark:border-white">
