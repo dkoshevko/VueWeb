@@ -45,7 +45,7 @@ export default function Footer() {
             Navigation
           </h5>
           <Navigation customClass="uppercase" />
-          <Link href="" className="uppercase">
+          <Link href="/mentions-legales" className="uppercase">
             Mentions légales
           </Link>
         </div>

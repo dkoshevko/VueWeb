@@ -5,7 +5,7 @@ import Header from "@/components/basics/Header";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import Footer from "@/components/basics/Footer";
 import { Toaster } from "@/components/ui/toaster";
-import Head from "next/head";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,12 +48,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <Head>
-        <script 
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
-        />
-      </Head>
+      <Script 
+        id="schema-script"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
+      />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
