@@ -28,7 +28,7 @@ export default function Footer() {
                     height={35}
                   />
                 </Link>
-                <Link href="">
+                <Link href="https://www.instagram.com/vueweb.fr/">
                   <Image
                     src="/icons/instagram.svg"
                     alt="Instagram"
