@@ -85,7 +85,7 @@ export function ContactForm({customClass}: ContactFormProps) {
               <FormItem>
                 {/* <FormLabel>Votre prénom</FormLabel> */}
                 <FormControl>
-                  <Input placeholder="PRÉNOM :" {...field} />
+                  <Input placeholder="PRÉNOM :" autoComplete='given-name' {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -98,7 +98,7 @@ export function ContactForm({customClass}: ContactFormProps) {
               <FormItem>
                 {/* <FormLabel>Votre nom</FormLabel> */}
                 <FormControl>
-                  <Input placeholder="NOM :" {...field} />
+                  <Input placeholder="NOM :" autoComplete='family-name' {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -111,7 +111,7 @@ export function ContactForm({customClass}: ContactFormProps) {
               <FormItem>
                 {/* <FormLabel>Votre email</FormLabel> */}
                 <FormControl>
-                  <Input placeholder="MAIL :" {...field} />
+                  <Input placeholder="MAIL :" autoComplete='email' {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -124,7 +124,7 @@ export function ContactForm({customClass}: ContactFormProps) {
               <FormItem>
                 {/* <FormLabel>Votre numéro</FormLabel> */}
                 <FormControl>
-                  <Input placeholder="TÉLÉPHONE :" {...field} />
+                  <Input placeholder="TÉLÉPHONE :" autoComplete='tel' {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

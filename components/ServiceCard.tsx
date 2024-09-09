@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 type ServiceCardProps = {
   image: string;
@@ -20,6 +19,7 @@ export default function ServiceCard({
         width={150}
         height={150}
         className="hover:scale-110 transition-all dark:invert"
+        unoptimized
       />
       <h3 className="text-2xl mt-5 mb-2">{title}</h3>
       <p className="text-justify">{description}</p>

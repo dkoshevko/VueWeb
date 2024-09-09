@@ -1,4 +1,3 @@
-import React from "react";
 import TeamMemberCard from "./TeamMemberCard";
 
 export default function TeamSection() {
@@ -7,17 +6,17 @@ export default function TeamSection() {
       <h2 className="uppercase text-3xl font-semibold mb-10">Notre équipe</h2>
       <div className="flex flex-col lg:flex-row justify-center gap-10 lg:gap-32">
         <TeamMemberCard
-          photo="/photos/DK.png"
+          photo="/photos/dk-light.png"
           fullName="Denys"
           jobPosition="Développeur"
         />
         <TeamMemberCard
-          photo="/photos/RP.png"
+          photo="/photos/rp-light.png"
           fullName="Rostyslav"
           jobPosition="Directeur des Opérations"
         />
         <TeamMemberCard
-          photo="/photos/AA.png"
+          photo="/photos/aa-light.png"
           fullName="Artur"
           jobPosition="Commercial"
         />

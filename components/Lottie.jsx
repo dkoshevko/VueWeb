@@ -2,7 +2,6 @@
 
 import React from "react";
 import Lottie from 'lottie-react'
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
 export default function LottieAnimation({ animation }) {

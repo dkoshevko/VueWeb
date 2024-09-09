@@ -2,9 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import Navigation from "./Navigation";
-import { Button } from "../ui/button";
 import Image from "next/image";
-import { Input } from "../ui/input";
 
 export default function Footer() {
   return (
