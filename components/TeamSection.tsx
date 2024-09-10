@@ -8,7 +8,7 @@ export default function TeamSection() {
         <TeamMemberCard
           photo="/photos/dk-light.png"
           fullName="Denys"
-          jobPosition="Développeur"
+          jobPosition="CEO - Développeur"
         />
         <TeamMemberCard
           photo="/photos/rp-light.png"
@@ -18,12 +18,12 @@ export default function TeamSection() {
         <TeamMemberCard
           photo="/photos/aa-light.png"
           fullName="Artur"
-          jobPosition="Commercial"
+          jobPosition="Conseiller"
         />
         <TeamMemberCard
           photo="/photos/superhero.png"
           fullName="Romain"
-          jobPosition="Commercial"
+          jobPosition="Conseiller"
         />
       </div>
     </section>

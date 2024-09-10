@@ -21,8 +21,8 @@ export default function TeamMemberCard({photo, fullName, jobPosition}: TeamMembe
           unoptimized
         />
       </div>
-      <h4 className="text-lg font-semibold mt-2">{fullName}</h4>
-      <h5>{jobPosition}</h5>
+      <h3 className="text-lg font-semibold mt-2">{fullName}</h3>
+      <h4>{jobPosition}</h4>
     </div>
   )
 }

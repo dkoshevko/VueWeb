@@ -28,8 +28,8 @@ export default function HeroSection() {
         <HeroBubble
           text="Meilleure satisfaction client"
           direction="-rotate-[20deg]"
-          position="-top-5"
-          delay="delay-300"
+          position="-top-3"
+          delay="delay-0"
         />
         <HeroBubble
           text="Conversion de nouveaux clients"

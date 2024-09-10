@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="flex container justify-between lg:justify-evenly py-12">
+    <footer className="flex container justify-between lg:justify-evenly gap-4 py-12">
         <div className="flex flex-col justify-between">
           <Logo />
           <nav className="text-sm">
@@ -39,9 +39,9 @@ export default function Footer() {
           </nav>
         </div>
         <div className="">
-          <h5 className="uppercase text-lg border-b-2 border-black pb-1 mb-5 dark:border-white">
+          <p className="uppercase text-lg border-b-2 border-black pb-1 mb-5 dark:border-white">
             Navigation
-          </h5>
+          </p>
           <div className="flex flex-col">
             <Navigation customClass="uppercase" />
             <Link href="/mentions-legales" className="uppercase">
