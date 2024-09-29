@@ -16,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/components/ui/use-toast"
+import emailjs from "@emailjs/browser"
 
 
 const formSchema = z.object({
@@ -54,30 +55,44 @@ export function ContactForm({customClass}: ContactFormProps) {
 
   const {toast} = useToast();
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    try {
-      const response = await fetch('/api/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
-      })
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-      if(response.status === 200) {
-        toast({
-          description: "Message envoyé avec succès !"
-        })
-      }
-    } catch (error) {
-      console.log(error);
-    }
-    console.log(values);
-  }
+    emailjs.sendForm('service_vueweb', 'template_admin', e.currentTarget, {
+        publicKey: 'agCyWkcLJ9CqBeUe3',
+      }).then(
+        () => {
+          console.log('SUCCESS!');
+          toast({
+            description: "Message envoyé avec succès !"
+          })
+          form.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+
+    emailjs.sendForm('service_vueweb', 'template_user', e.currentTarget, {
+        publicKey: 'agCyWkcLJ9CqBeUe3',
+      }).then(
+        () => {
+          console.log('SUCCESS!');
+          toast({
+            description: "Message envoyé avec succès !"
+          })
+          form.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+  };
+
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className={customClass}>
+      <form onSubmit={(sendEmail)} className={customClass}>
           <FormField
             control={form.control}
             name="firstName"

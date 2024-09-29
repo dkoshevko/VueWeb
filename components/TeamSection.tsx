@@ -20,11 +20,11 @@ export default function TeamSection() {
           fullName="Artur"
           jobPosition="Conseiller"
         />
-        <TeamMemberCard
+        {/* <TeamMemberCard
           photo="/photos/superhero.png"
           fullName="Romain"
           jobPosition="Conseiller"
-        />
+        /> */}
       </div>
     </section>
   );
