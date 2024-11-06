@@ -13,7 +13,7 @@ export default function TeamSection() {
         <TeamMemberCard
           photo="/photos/rp-light.png"
           fullName="Rostyslav"
-          jobPosition="Directeur des Opérations"
+          jobPosition="Responsable des relations client"
         />
         <TeamMemberCard
           photo="/photos/aa-light.png"
